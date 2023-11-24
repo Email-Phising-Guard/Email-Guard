@@ -1,5 +1,6 @@
 export const questions: Question[] = [
   {
+    id: 1,
     question: "What is a red flag indicating a phishing email?",
     options: [
       "The email contains a valid contact number for inquiries",
@@ -10,6 +11,7 @@ export const questions: Question[] = [
     answer: 1,
   },
   {
+    id: 2,
     question: "How can you verify the legitimacy of a link in an email?",
     options: [
       "Hover over the link to preview the URL before clicking",
@@ -20,6 +22,7 @@ export const questions: Question[] = [
     answer: 0,
   },
   {
+    id: 3,
     question: "Is it a legitimate or phishing email?",
     options: [
       "Legitimate, because it comes from someone I know",
@@ -30,7 +33,8 @@ export const questions: Question[] = [
     answer: 1,
   },
   {
-    question: `You’ve received a new kind of report from the school. Usually their emails come from "example@westmountschool.org".Is it a legitimate or phishing email?`,
+    id: 4,
+    question: `You’ve received a new kind of report from the school. Usually their emails come from "example@westmountschool.org". Is it a legitimate or phishing email?`,
     options: [
       "Legitimate, because PDFs are usually safe.",
       "Phishing, because usually the 2023 financial activity is published in 2024.",
@@ -40,6 +44,7 @@ export const questions: Question[] = [
     answer: 3,
   },
   {
+    id: 5,
     question:
       "Which of the following is not a proper way to handle email phishing?",
     options: [
@@ -51,6 +56,7 @@ export const questions: Question[] = [
     answer: 1,
   },
   {
+    id: 6,
     question: "How can you protect yourself from email phishing?",
     options: [
       "Use the same password for multiple accounts for easy memorization",
@@ -61,6 +67,7 @@ export const questions: Question[] = [
     answer: 1,
   },
   {
+    id: 7,
     question:
       "You receive an important email about your tax filing. Is this a phishing email or a legitimate one?",
     options: [
@@ -74,6 +81,7 @@ export const questions: Question[] = [
 ];
 
 export type Question = {
+  id: number;
   question: string;
   options: string[];
   answer: number;

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HomeLinks = [
   { href: "/dashboard", label: "Dashboard" },
-  { href: "/quiz", label: "Quiz" },
+  { href: "/dashboard/quiz", label: "Quiz" },
   { href: "/about", label: "About" },
 ];
 
