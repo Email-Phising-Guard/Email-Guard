@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function StartQuizPage() {
   return (
@@ -12,11 +13,11 @@ export default function StartQuizPage() {
           become a vigilant defender of your online privacy!
         </p>
       </div>
-      <div>
+      <Link href="/dashboard/quiz/question/page">
         <Button type="submit" className="my-20 w-full py-10 text-3xl">
           Start Quiz
         </Button>
-      </div>
+      </Link>
     </main>
   );
 }
