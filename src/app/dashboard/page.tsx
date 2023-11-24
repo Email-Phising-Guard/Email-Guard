@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const DashboardLinks = [
-  { href: "/dashboard", label: "Explore Topics" },
+  { href: "/topic", label: "Explore Topics" },
   { href: "/quiz", label: "Start Quiz" },
 ];
 
