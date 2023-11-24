@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+const relativePath = "/dashboard";
+
 const DashboardLinks = [
-  { href: "/topic", label: "Explore Topics" },
-  { href: "/quiz", label: "Start Quiz" },
+  { href: `${relativePath}/topic`, label: "Explore Topics" },
+  { href: `${relativePath}/quiz`, label: "Start Quiz" },
 ];
 
 export default function DashboardPage() {
