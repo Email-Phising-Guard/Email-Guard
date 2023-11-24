@@ -1,3 +1,8 @@
+import { StaticImageData } from "next/image";
+import q3 from "../../public/question/q3.png";
+import q4 from "../../public/question/q4.png";
+import q7 from "../../public/question/q7.png";
+
 export const questions: Question[] = [
   {
     id: 1,
@@ -23,7 +28,9 @@ export const questions: Question[] = [
   },
   {
     id: 3,
+
     question: "Is it a legitimate or phishing email?",
+    image: q3,
     options: [
       "Legitimate, because it comes from someone I know",
       "Phishing, because the hyperlink and attachment are suspicious",
@@ -35,6 +42,7 @@ export const questions: Question[] = [
   {
     id: 4,
     question: `You’ve received a new kind of report from the school. Usually their emails come from "example@westmountschool.org". Is it a legitimate or phishing email?`,
+    image: q4,
     options: [
       "Legitimate, because PDFs are usually safe.",
       "Phishing, because usually the 2023 financial activity is published in 2024.",
@@ -70,6 +78,7 @@ export const questions: Question[] = [
     id: 7,
     question:
       "You receive an important email about your tax filing. Is this a phishing email or a legitimate one?",
+    image: q7,
     options: [
       "Legitimate, because the email has an official footnotes",
       "Legitimate, because the email has an official logo",
@@ -82,6 +91,7 @@ export const questions: Question[] = [
 
 export type Question = {
   id: number;
+  image?: StaticImageData;
   question: string;
   options: string[];
   answer: number;

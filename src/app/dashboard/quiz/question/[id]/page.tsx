@@ -1,9 +1,10 @@
+import Image from "next/image";
+import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { questions } from "@/db/questions";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 
 type SingleQuizQuestionPageProps = {
   params: {
@@ -22,13 +23,21 @@ export default function SingleQuizQuestionPage({
   }
   return (
     <main className="mx-auto my-5 max-w-xs">
-      <div className="my-5 ml-5 flex items-baseline gap-2">
+      <div className="my-5 flex items-baseline gap-2">
         <h1 className="text-2xl font-bold">Question {question.id}</h1>
         <span className="font-semibold text-gray-500">
           out of {totalQuestions}
         </span>
       </div>
-      <p className="ml-5 mt-5">{question.question}</p>
+      <p className="my-5">{question.question}</p>
+      {question.image && (
+        <Image
+          src={question.image}
+          alt={`Image for question ${question.id}`}
+          width={332}
+          height={200}
+        />
+      )}
       <section className="mt-5">
         <RadioGroup defaultValue="q1" className="max-w-xl gap-5">
           {question.options.map((option, i) => (
