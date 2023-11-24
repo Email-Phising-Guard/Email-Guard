@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { questions } from "@/db/questions";
 import Link from "next/link";
 
 export default function StartQuizPage() {
@@ -13,7 +14,7 @@ export default function StartQuizPage() {
           become a vigilant defender of your online privacy!
         </p>
       </div>
-      <Link href="/dashboard/quiz/question/page">
+      <Link href={`/dashboard/quiz/question/${questions[0].id}`}>
         <Button type="submit" className="my-20 w-full py-10 text-3xl">
           Start Quiz
         </Button>

@@ -44,7 +44,13 @@ export default function SingleQuizQuestionPage({
           ))}
         </RadioGroup>
         <div className="mt-5 flex w-full flex-col gap-3">
-          <Link href="">
+          <Link
+            href={
+              question.id === 7
+                ? "/dashboard/quiz/complete"
+                : `/dashboard/quiz/question/${question.id + 1}`
+            }
+          >
             <Button type="submit" className="w-full py-8 text-3xl">
               Submit
             </Button>
