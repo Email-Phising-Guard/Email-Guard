@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { team } from "@/db/team";
 import TeamCard from "./team-card";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import Navbar from "@/components/nav/navbar";
+import Navbar from "@/components/navbar";
 
 export default function AboutPage() {
   return (

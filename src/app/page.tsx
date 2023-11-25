@@ -1,6 +1,6 @@
 import Logo from "@/components/logo";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import Navbar from "@/components/nav/navbar";
+import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 

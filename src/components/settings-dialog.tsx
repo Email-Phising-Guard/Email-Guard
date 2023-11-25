@@ -7,6 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import ThemeController from "./theme-controller";
 
 export default function SettingsDialog() {
   return (
@@ -20,6 +21,7 @@ export default function SettingsDialog() {
         <DialogHeader>
           <DialogTitle>Settings</DialogTitle>
         </DialogHeader>
+        <ThemeController />
       </DialogContent>
     </Dialog>
   );

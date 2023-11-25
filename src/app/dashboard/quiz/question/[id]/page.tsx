@@ -5,7 +5,7 @@ import { questions } from "@/db/questions";
 
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import MutipleChoiceSection from "./mutiple-choice-section";
-import Navbar from "@/components/nav/navbar";
+import Navbar from "@/components/navbar";
 
 type SingleQuizQuestionPageProps = {
   params: {

@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
-import BackButton from "../back-button";
-import Header from "../header";
-import HomeButton from "../home-button";
-import SettingsDialog from "../settings-dialog";
+import BackButton from "./back-button";
+import Header from "./header";
+import HomeButton from "./home-button";
+import SettingsDialog from "./settings-dialog";
 
 type NavbarProps = {
   type: "home" | "back" | "settings";

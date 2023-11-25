@@ -1,7 +1,7 @@
 import Link from "next/link";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/nav/navbar";
+import Navbar from "@/components/navbar";
 
 const relativePath = "/dashboard/topic";
 const TopicLinks = [
