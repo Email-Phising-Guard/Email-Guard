@@ -1,6 +1,7 @@
-import MaxWidthWrapper from "@/components/max-width-wrapper";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
+import BackButtonNav from "@/components/nav/back-button-nav";
+import { Button } from "@/components/ui/button";
 
 const relativePath = "/dashboard/topic";
 const TopicLinks = [
@@ -17,17 +18,20 @@ const TopicLinks = [
 
 export default function ExploreTopicPage() {
   return (
-    <MaxWidthWrapper>
-      <h1 className="mt-20 text-center">Choose a Topic</h1>
-      <div className="mx-auto mt-32 flex w-full max-w-xs flex-col gap-5">
-        {TopicLinks.map(({ href, label }) => (
-          <Link key={href} href={href}>
-            <Button className="h-auto w-full justify-center py-10 text-xl font-light">
-              <span className="break-words">{label}</span>
-            </Button>
-          </Link>
-        ))}
-      </div>
-    </MaxWidthWrapper>
+    <>
+      <BackButtonNav />
+      <MaxWidthWrapper>
+        <h1 className="mt-20 text-center">Choose a Topic</h1>
+        <div className="mx-auto mt-32 flex w-full max-w-xs flex-col gap-5">
+          {TopicLinks.map(({ href, label }) => (
+            <Link key={href} href={href}>
+              <Button className="h-auto w-full justify-center py-10 text-xl font-light">
+                <span className="break-words">{label}</span>
+              </Button>
+            </Link>
+          ))}
+        </div>
+      </MaxWidthWrapper>
+    </>
   );
 }

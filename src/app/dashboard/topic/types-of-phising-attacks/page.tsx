@@ -1,5 +1,11 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
+import BackButtonNav from "@/components/nav/back-button-nav";
 
 export default function TopicOnePage() {
-  return <MaxWidthWrapper>TopicOnePage</MaxWidthWrapper>;
+  return (
+    <>
+      <BackButtonNav />
+      <MaxWidthWrapper>TopicOnePage</MaxWidthWrapper>
+    </>
+  );
 }
