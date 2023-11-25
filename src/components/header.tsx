@@ -7,7 +7,7 @@ type HeaderProps = {
 
 export default function Header({ className, children }: HeaderProps) {
   return (
-    <header className={cn("mx-auto max-w-md px-2 py-10", className)}>
+    <header className={cn("mx-auto max-w-md px-2 pt-5", className)}>
       {children}
     </header>
   );

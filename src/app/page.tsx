@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold">Email Guard</h1>
           <p className="mb-5 italic">Ready to defend yourself?</p>
         </div>
-        <div className="mx-auto flex w-full max-w-xs flex-col gap-5">
+        <div className="mx-auto flex w-full max-w-xs flex-col gap-5 pt-10">
           {HomeLinks.map(({ href, label }) => (
             <Link key={href} href={href}>
               <Button className="w-full py-8 text-3xl">{label}</Button>
