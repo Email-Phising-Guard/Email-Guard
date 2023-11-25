@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import BackButtonNav from "@/components/nav/back-button-nav";
+import Navbar from "@/components/nav/navbar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ const DashboardLinks = [
 export default function DashboardPage() {
   return (
     <>
-      <BackButtonNav />
+      <Navbar type="back" />
       <MaxWidthWrapper>
         <h1 className="mt-20 text-center">Dashboard</h1>
         <div className="mx-auto mt-32 flex w-full max-w-xs flex-col gap-5">

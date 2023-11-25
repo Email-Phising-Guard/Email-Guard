@@ -1,7 +1,7 @@
 import Link from "next/link";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import BackButtonNav from "@/components/nav/back-button-nav";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/nav/navbar";
 
 const relativePath = "/dashboard/topic";
 const TopicLinks = [
@@ -19,7 +19,7 @@ const TopicLinks = [
 export default function ExploreTopicPage() {
   return (
     <>
-      <BackButtonNav />
+      <Navbar type="back" />
       <MaxWidthWrapper>
         <h1 className="mt-20 text-center">Choose a Topic</h1>
         <div className="mx-auto mt-32 flex w-full max-w-xs flex-col gap-5">

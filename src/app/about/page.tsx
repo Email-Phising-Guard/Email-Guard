@@ -5,12 +5,12 @@ import { Textarea } from "@/components/ui/textarea";
 import { team } from "@/db/team";
 import TeamCard from "./team-card";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import BackButtonNav from "@/components/nav/back-button-nav";
+import Navbar from "@/components/nav/navbar";
 
 export default function AboutPage() {
   return (
     <>
-      <BackButtonNav />
+      <Navbar type="back" />
       <MaxWidthWrapper>
         <h1 className="py-5">About</h1>
         <section className="py-5">

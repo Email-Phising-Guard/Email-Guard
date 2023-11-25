@@ -1,6 +1,6 @@
 import Logo from "@/components/logo";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import SettingsOnlyNav from "@/components/nav/settings-only";
+import Navbar from "@/components/nav/navbar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ const HomeLinks = [
 export default function Home() {
   return (
     <>
-      <SettingsOnlyNav />
+      <Navbar type="settings" />
       <MaxWidthWrapper className="flex flex-col justify-evenly">
         <div className="mb-5 space-y-3 text-center">
           <div className="flex justify-center">
