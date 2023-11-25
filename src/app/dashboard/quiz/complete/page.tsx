@@ -1,9 +1,10 @@
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function CongratulationPage() {
   return (
-    <main className="mx-auto flex max-w-sm flex-col justify-evenly">
+    <MaxWidthWrapper className="flex max-w-sm flex-col justify-evenly">
       <h1 className="py-10 text-primary">Congratulations!</h1>
       <p className="mb-3">🎉🎉🎉</p>
       <h2 className="mb-5">
@@ -21,6 +22,6 @@ export default function CongratulationPage() {
           Retry Quiz
         </Button>
       </Link>
-    </main>
+    </MaxWidthWrapper>
   );
 }

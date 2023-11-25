@@ -4,10 +4,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { team } from "@/db/team";
 import TeamCard from "./team-card";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-md py-5">
+    <MaxWidthWrapper>
       <h1 className="py-5">About</h1>
       <section className="py-5">
         <h2 className="mb-3">Our App</h2>
@@ -63,6 +64,6 @@ export default function AboutPage() {
           </div>
         </form>
       </section>
-    </main>
+    </MaxWidthWrapper>
   );
 }

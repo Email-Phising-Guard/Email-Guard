@@ -1,4 +1,5 @@
 import Logo from "@/components/logo";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ const HomeLinks = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center">
+    <MaxWidthWrapper className="flex min-h-screen flex-col justify-center">
       <div className="mb-5 space-y-3 text-center">
         <div className="flex justify-center">
           <Logo width={180.14} height={236.97} />
@@ -25,6 +26,6 @@ export default function Home() {
           </Link>
         ))}
       </div>
-    </main>
+    </MaxWidthWrapper>
   );
 }

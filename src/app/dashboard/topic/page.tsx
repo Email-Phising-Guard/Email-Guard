@@ -1,3 +1,4 @@
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -16,7 +17,7 @@ const TopicLinks = [
 
 export default function ExploreTopicPage() {
   return (
-    <main className="mx-auto max-w-md">
+    <MaxWidthWrapper>
       <h1 className="mt-20 text-center">Choose a Topic</h1>
       <div className="mx-auto mt-32 flex w-full max-w-xs flex-col gap-5">
         {TopicLinks.map(({ href, label }) => (
@@ -27,6 +28,6 @@ export default function ExploreTopicPage() {
           </Link>
         ))}
       </div>
-    </main>
+    </MaxWidthWrapper>
   );
 }

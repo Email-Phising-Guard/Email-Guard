@@ -18,6 +18,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { CheckCircle2 } from "lucide-react";
+import MaxWidthWrapper from "@/components/max-width-wrapper";
 
 type SingleQuizQuestionPageProps = {
   params: {
@@ -35,7 +36,7 @@ export default function SingleQuizQuestionPage({
     return notFound();
   }
   return (
-    <main className="mx-auto my-5 max-w-sm">
+    <MaxWidthWrapper>
       <div className="my-5 flex items-baseline gap-2">
         <h1 className="text-2xl font-bold">Question {question.id}</h1>
         <span className="font-semibold text-gray-500">
@@ -96,6 +97,6 @@ export default function SingleQuizQuestionPage({
           )}
         </div>
       </section>
-    </main>
+    </MaxWidthWrapper>
   );
 }
