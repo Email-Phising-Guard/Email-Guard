@@ -11,7 +11,7 @@ const HomeLinks = [
 
 export default function Home() {
   return (
-    <MaxWidthWrapper className="flex min-h-screen flex-col justify-center">
+    <MaxWidthWrapper className="flex min-h-screen flex-col justify-evenly">
       <div className="mb-5 space-y-3 text-center">
         <div className="flex justify-center">
           <Logo width={180.14} height={236.97} />
