@@ -1,4 +1,4 @@
-import { Settings2 } from "lucide-react";
+import { Settings, Settings2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -12,8 +12,8 @@ export default function SettingsDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="ghost">
-          <Settings2 />
+        <Button variant="ghost" className="py-8">
+          <Settings className="stroke-primary" size={34} />
         </Button>
       </DialogTrigger>
       <DialogContent>
