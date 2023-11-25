@@ -10,6 +10,8 @@ export default function MaxWidthWrapper({
   children,
 }: MaxWidthWrapperProps) {
   return (
-    <main className={cn("mx-auto max-w-md py-5", className)}>{children}</main>
+    <main className={cn("mx-auto max-w-md px-2 py-5", className)}>
+      {children}
+    </main>
   );
 }
