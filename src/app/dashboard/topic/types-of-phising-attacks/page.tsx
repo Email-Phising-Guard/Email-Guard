@@ -1,10 +1,10 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
-import BackButtonNav from "@/components/nav/back-button-nav";
+import Navbar from "@/components/navbar";
 
 export default function TopicOnePage() {
   return (
     <>
-      <BackButtonNav />
+      <Navbar type="back" />
       <MaxWidthWrapper>TopicOnePage</MaxWidthWrapper>
     </>
   );
