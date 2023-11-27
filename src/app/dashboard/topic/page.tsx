@@ -11,7 +11,7 @@ const TopicLinks = [
   },
   {
     href: `${relativePath}/identifying-email-phishing`,
-    label: "Detection and Prevention Strategies",
+    label: "Identifying Email Phishing",
   },
   { href: `${relativePath}/impact-of-phising`, label: "Impact of Phishing" },
 ];
