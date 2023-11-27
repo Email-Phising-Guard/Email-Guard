@@ -5,7 +5,9 @@ export default function TopicTwoPage() {
   return (
     <>
       <Navbar type="back" />
-      <MaxWidthWrapper>TopicTwoPage</MaxWidthWrapper>
+      <MaxWidthWrapper>
+        <h1 className="mt-10">Identifying Email Phishing</h1>
+      </MaxWidthWrapper>
     </>
   );
 }
