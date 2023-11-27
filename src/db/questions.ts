@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
-import q3 from "../../public/question/q3.png";
-import q4 from "../../public/question/q4.png";
-import q7 from "../../public/question/q7.png";
+import q3 from "../../public/question/q3.jpg";
+import q4 from "../../public/question/q4.jpg";
+import q7 from "../../public/question/q7.jpg";
 
 export const questions: Question[] = [
   {

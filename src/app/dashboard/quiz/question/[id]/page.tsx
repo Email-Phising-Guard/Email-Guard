@@ -49,18 +49,18 @@ export default function SingleQuizQuestionPage({
                 src={question.image}
                 className="mx-auto"
                 alt={`Image for question ${question.id}`}
-                width={332}
+                width={1280}
                 height={200}
               />
             </DialogTrigger>
-            <DialogContent className="h-[600px] w-[500px]">
+            <DialogContent className="h-[600px] w-[1280px]">
               <DialogHeader></DialogHeader>
               <Image
                 src={question.image}
                 className="mx-auto -rotate-90"
                 alt={`Image for question ${question.id}`}
-                width={704}
-                height={394}
+                width={1280}
+                height={1280}
               />
               <DialogFooter></DialogFooter>
             </DialogContent>
