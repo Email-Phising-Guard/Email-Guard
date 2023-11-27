@@ -10,7 +10,7 @@ const TopicLinks = [
     label: "Types of Phishing Attacks",
   },
   {
-    href: `${relativePath}/detection-prevention-strategies`,
+    href: `${relativePath}/identifying-email-phishing`,
     label: "Detection and Prevention Strategies",
   },
   { href: `${relativePath}/impact-of-phising`, label: "Impact of Phishing" },
