@@ -15,6 +15,7 @@ import { questions } from "@/db/questions";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import MutipleChoiceSection from "./mutiple-choice-section";
 import Navbar from "@/components/navbar";
+import { LucideMailQuestion } from "lucide-react";
 
 type SingleQuizQuestionPageProps = {
   params: {
@@ -36,6 +37,7 @@ export default function SingleQuizQuestionPage({
       <Navbar type="home" />
       <MaxWidthWrapper>
         <div className="my-5 flex items-baseline gap-2">
+          <LucideMailQuestion size={32} />
           <h1 className="text-2xl font-bold">Question {question.id}</h1>
           <span className="font-semibold text-gray-500">
             out of {totalQuestions}
