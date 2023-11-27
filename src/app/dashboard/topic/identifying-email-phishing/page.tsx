@@ -51,6 +51,14 @@ export default function TopicTwoPage() {
           width={500}
           height={700}
         />
+        <h2 className="mb-5 mt-14 text-3xl">Video</h2>
+        <iframe
+          width="430"
+          height="315"
+          src="https://www.youtube.com/embed/o0btqyGWIQw?si=ms8wmQXdT_yBsh4-"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
       </MaxWidthWrapper>
     </>
   );
