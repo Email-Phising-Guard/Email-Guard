@@ -1,5 +1,14 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 import { questions } from "@/db/questions";
 
@@ -34,13 +43,28 @@ export default function SingleQuizQuestionPage({
         </div>
         <p className="my-5">{question.question}</p>
         {question.image && (
-          <Image
-            src={question.image}
-            className="mx-auto"
-            alt={`Image for question ${question.id}`}
-            width={332}
-            height={200}
-          />
+          <Dialog>
+            <DialogTrigger asChild>
+              <Image
+                src={question.image}
+                className="mx-auto"
+                alt={`Image for question ${question.id}`}
+                width={332}
+                height={200}
+              />
+            </DialogTrigger>
+            <DialogContent className="h-[600px] w-[500px]">
+              <DialogHeader></DialogHeader>
+              <Image
+                src={question.image}
+                className="mx-auto rotate-90"
+                alt={`Image for question ${question.id}`}
+                width={704}
+                height={394}
+              />
+              <DialogFooter></DialogFooter>
+            </DialogContent>
+          </Dialog>
         )}
         <MutipleChoiceSection question={question} />
       </MaxWidthWrapper>
