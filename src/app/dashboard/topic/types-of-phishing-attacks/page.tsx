@@ -39,23 +39,31 @@ export default function TopicOnePage() {
                     them.
                   </li>
                   <li>
-                    97% of people around the world are unable to identify a
-                    sophisticated phishing email.
+                    <span className="font-semibold">97%</span> of people around
+                    the world are unable to identify a sophisticated phishing
+                    email.
                   </li>
-                  <li>92% of malware is delivered via email </li>
                   <li>
-                    95% of attacks on business networks are the result of
-                    successful spear phishing
+                    <span className="font-semibold">92%</span> of malware is
+                    delivered via email{" "}
+                  </li>
+                  <li>
+                    <span className="font-semibold">95%</span> of attacks on
+                    business networks are the result of successful spear
+                    phishing
                   </li>
                   <li>
                     Average cost of phishing attack to a midsized company is
-                    $1.6 million
+                    <span className="font-semibold">$1.6 million</span>
                   </li>
                   <li>
                     30% of phishing messages are opened by the user, 12% of
                     those users click on the malicious attachment or link.{" "}
                   </li>
-                  <li>Spam is 45% of all emails sent.</li>
+                  <li>
+                    Spam is <span className="font-semibold">45%</span> of all
+                    emails sent.
+                  </li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
