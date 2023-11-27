@@ -57,7 +57,7 @@ export default function SingleQuizQuestionPage({
               <DialogHeader></DialogHeader>
               <Image
                 src={question.image}
-                className="mx-auto rotate-90"
+                className="mx-auto -rotate-90"
                 alt={`Image for question ${question.id}`}
                 width={704}
                 height={394}
