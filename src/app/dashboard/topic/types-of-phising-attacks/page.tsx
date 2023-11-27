@@ -7,6 +7,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { PieChart } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function TopicOnePage() {
   return (
@@ -30,31 +32,30 @@ export default function TopicOnePage() {
                 <PieChart className="mr-2 h-6 w-6" /> Phishing Stats
               </AccordionTrigger>
               <AccordionContent className="text-md">
-                <ul>
+                <ul className="list-disc">
                   <li>
-                    {" "}
-                    - Phishing is the leading cause for data breaches,
-                    accounting for a whooping{" "}
-                    <span className="text-semibold">90%</span> of them.
+                    Phishing is the leading cause for data breaches, accounting
+                    for a whooping <span className="font-semibold">90%</span> of
+                    them.
                   </li>
                   <li>
-                    - 97% of people around the world are unable to identify a
+                    97% of people around the world are unable to identify a
                     sophisticated phishing email.
                   </li>
-                  <li>- 92% of malware is delivered via email </li>
+                  <li>92% of malware is delivered via email </li>
                   <li>
-                    - 95% of attacks on business networks are the result of
+                    95% of attacks on business networks are the result of
                     successful spear phishing
                   </li>
                   <li>
-                    - Average cost of phishing attack to a midsized company is
+                    Average cost of phishing attack to a midsized company is
                     $1.6 million
                   </li>
                   <li>
-                    - 30% of phishing messages are opened by the user, 12% of
+                    30% of phishing messages are opened by the user, 12% of
                     those users click on the malicious attachment or link.{" "}
                   </li>
-                  <li> - Spam is 45% of all emails sent.</li>
+                  <li>Spam is 45% of all emails sent.</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
@@ -132,12 +133,27 @@ export default function TopicOnePage() {
         </section>
         <section className="py-5">
           <h2 className="mb-3">Example</h2>
-          <p>
-            Email phishing is a deceitful tactic involving fake emails that
-            trick people into sharing personal information or taking harmful
-            actions. Stay cautious and verify unexpected emails to avoid falling
-            for these scams.
-          </p>
+          <Link href="/topic/topic-1-eg.png">
+            {" "}
+            <Image
+              src="/topic/topic-1-eg.png"
+              width={400}
+              height={100}
+              alt="email-phishing-example"
+            ></Image>
+          </Link>
+        </section>
+        <section className="py-5">
+          <h2 className="mb-3">Video</h2>
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/XBkzBrXlle0?si=jWOywt-bZmyCIeko"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
         </section>
       </MaxWidthWrapper>
     </>
