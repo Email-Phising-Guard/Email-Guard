@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import Image from "next/image";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Navbar from "@/components/navbar";
 
@@ -43,6 +44,13 @@ export default function TopicTwoPage() {
             </Accordion>
           ))}
         </div>
+        <h2 className="mb-5 mt-14 text-3xl">Example</h2>
+        <Image
+          src="/topics/identifying_email_phishing_example.jpg"
+          alt="identifying email phishing example"
+          width={500}
+          height={700}
+        />
       </MaxWidthWrapper>
     </>
   );
