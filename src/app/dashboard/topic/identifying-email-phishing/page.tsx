@@ -60,7 +60,10 @@ export default function TopicTwoPage() {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
-        <TopicNav />
+        <TopicNav
+          segmentPrev="types-of-phishing-attacks"
+          segmentNext="impact-of-phising"
+        />
       </MaxWidthWrapper>
     </>
   );
