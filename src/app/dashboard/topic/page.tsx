@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar";
 const relativePath = "/dashboard/topic";
 const TopicLinks = [
   {
-    href: `${relativePath}/types-of-phising-attacks`,
+    href: `${relativePath}/types-of-phishing-attacks`,
     label: "Types of Phishing Attacks",
   },
   {
