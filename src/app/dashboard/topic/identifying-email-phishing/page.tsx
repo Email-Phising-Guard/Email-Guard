@@ -8,6 +8,7 @@ import {
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Navbar from "@/components/navbar";
+import TopicNav from "@/components/topic-nav";
 
 const tips = [
   {
@@ -59,6 +60,7 @@ export default function TopicTwoPage() {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
+        <TopicNav />
       </MaxWidthWrapper>
     </>
   );
