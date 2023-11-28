@@ -1,5 +1,6 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Navbar from "@/components/navbar";
+import TopicNav from "@/components/topic-nav";
 import {
   Accordion,
   AccordionContent,
@@ -163,6 +164,7 @@ export default function TopicOnePage() {
             ></iframe>
           </div>
         </section>
+        <TopicNav segmentNext="identifying-email-phishing" />
       </MaxWidthWrapper>
     </>
   );
