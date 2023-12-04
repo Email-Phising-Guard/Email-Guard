@@ -21,11 +21,11 @@ export default function ExploreTopicPage() {
     <>
       <Navbar type="back" />
       <MaxWidthWrapper>
-        <h1 className="mt-20 text-center">Choose a Topic</h1>
-        <div className="mx-auto mt-32 flex w-full max-w-xs flex-col gap-5">
+        <h1 className="mt-10 text-center">Choose a Topic</h1>
+        <div className="mx-auto mt-20 flex w-full max-w-xs flex-col gap-5">
           {TopicLinks.map(({ href, label }) => (
             <Link key={href} href={href}>
-              <Button className="h-auto w-full justify-center py-10 text-xl font-light">
+              <Button className="h-auto w-full justify-center py-10 text-xl font-medium">
                 <span className="break-words">{label}</span>
               </Button>
             </Link>

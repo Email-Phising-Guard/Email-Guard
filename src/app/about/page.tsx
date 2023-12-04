@@ -49,14 +49,14 @@ export default function AboutPage() {
         </section>
         <section className="py-5">
           <form>
-            <h2 className="mb-5 text-center text-4xl text-primary">
+            <h2 className="mb-10 mt-20 text-center text-4xl text-primary">
               Have Questions?
             </h2>
-            <div className="mb-5">
+            <div className="mb-5 space-y-3">
               <Label htmlFor="email">Your Email</Label>
               <Input type="email" id="email" />
             </div>
-            <div className="mb-5">
+            <div className="mb-5 space-y-3">
               <Label htmlFor="message">Your message</Label>
               <Textarea id="message" />
             </div>
