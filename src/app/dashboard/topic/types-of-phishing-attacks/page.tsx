@@ -16,7 +16,7 @@ export default function TopicOnePage() {
     <>
       <Navbar type="home" />
       <MaxWidthWrapper>
-        <h1 className="py-5">Email Phising</h1>
+        <h1 className="py-5 text-primary">Email Phising</h1>
         <section className="py-5">
           <h2 className="mb-3">What is it?</h2>
           <p>
@@ -153,6 +153,11 @@ export default function TopicOnePage() {
         </section>
         <section className="py-5">
           <h2 className="mb-3">Video</h2>
+          <h3 className="mb-5 text-xl font-semibold">
+            This video will provide a concise, 6-minute explanation of phishing
+            attacks, a notorious cyber threat that has been plaguing internet
+            users for years.
+          </h3>
           <div className="relative" style={{ paddingBottom: "56.25%" }}>
             <iframe
               className="absolute inset-0 h-full w-full"

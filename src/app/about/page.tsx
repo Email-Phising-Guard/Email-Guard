@@ -72,12 +72,16 @@ export default function AboutPage() {
               Have Questions?
             </h2>
             <div className="mb-5 space-y-3">
-              <Label htmlFor="email">Your Email</Label>
-              <Input type="email" id="email" />
+              <Label htmlFor="email" className="text-lg">
+                Your Email
+              </Label>
+              <Input type="email" id="email" className="text-lg" />
             </div>
             <div className="mb-5 space-y-3">
-              <Label htmlFor="message">Your message</Label>
-              <Textarea id="message" />
+              <Label htmlFor="message" className="text-lg">
+                Your message
+              </Label>
+              <Textarea id="message" className="text-lg" />
             </div>
             <div className="mb-5">
               <Button type="submit" className="w-full py-10 text-3xl">

@@ -34,7 +34,7 @@ export default function TopicTwoPage() {
     <>
       <Navbar type="home" />
       <MaxWidthWrapper>
-        <h1 className="my-10">Identifying Email Phishing</h1>
+        <h1 className="my-10 text-primary">Identifying Email Phishing</h1>
         <h2 className="mb-5 text-3xl">Tips</h2>
         <div className="space-y-5">
           {tips.map((tip, index) => (
@@ -59,6 +59,10 @@ export default function TopicTwoPage() {
           />
         </Link>
         <h2 className="mb-5 mt-14 text-3xl">Video</h2>
+        <h3 className="mb-5 text-xl font-semibold">
+          This video will guide you on identifying and avoiding phishing attacks
+          to protect your organization.
+        </h3>
         <iframe
           width="430"
           height="315"

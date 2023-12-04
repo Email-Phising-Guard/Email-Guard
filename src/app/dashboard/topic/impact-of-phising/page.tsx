@@ -37,7 +37,7 @@ export default function TopicThreePage() {
     <>
       <Navbar type="home" />
       <MaxWidthWrapper>
-        <h1 className="my-10">Responding to Email Phishing</h1>
+        <h1 className="my-10 text-primary">Responding to Email Phishing</h1>
         <Link href="/otherPics/picture1.png" target="_blank">
           <Image
             src="/otherPics/picture1.png"
@@ -66,6 +66,11 @@ export default function TopicThreePage() {
         ))}
 
         <h2 className="mb-5 mt-14 text-3xl">Video</h2>
+        <h3 className="mb-5 text-xl font-semibold">
+          This video will guide you through the process of identifying and
+          reporting spam emails in Gmail, ensuring your inbox stays clean and
+          secure.
+        </h3>
         <iframe
           width="430"
           height="315"
