@@ -9,6 +9,7 @@ import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Navbar from "@/components/navbar";
 import TopicNav from "@/components/topic-nav";
 import Image from "next/image";
+import Link from "next/link";
 
 const tips = [
   {
@@ -34,15 +35,17 @@ const tips = [
 export default function TopicThreePage() {
   return (
     <>
-      <Navbar type="back" />
+      <Navbar type="home" />
       <MaxWidthWrapper>
         <h1 className="my-10">Responding to Email Phishing</h1>
-        <Image
-          src="/otherPics/picture1.png"
-          alt="two people looking at a computer screen"
-          width={393}
-          height={240}
-        />
+        <Link href="/otherPics/picture1.png" target="_blank">
+          <Image
+            src="/otherPics/picture1.png"
+            alt="two people looking at a computer screen"
+            width={393}
+            height={240}
+          />
+        </Link>
         <div className="my-5 flex items-center justify-start">
           <h2>Tips</h2>
         </div>

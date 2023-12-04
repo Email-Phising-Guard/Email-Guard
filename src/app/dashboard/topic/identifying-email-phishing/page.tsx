@@ -9,6 +9,7 @@ import Image from "next/image";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Navbar from "@/components/navbar";
 import TopicNav from "@/components/topic-nav";
+import Link from "next/link";
 
 const tips = [
   {
@@ -31,7 +32,7 @@ const tips = [
 export default function TopicTwoPage() {
   return (
     <>
-      <Navbar type="back" />
+      <Navbar type="home" />
       <MaxWidthWrapper>
         <h1 className="my-10">Identifying Email Phishing</h1>
         <h2 className="mb-5 text-3xl">Tips</h2>
@@ -46,12 +47,17 @@ export default function TopicTwoPage() {
           ))}
         </div>
         <h2 className="mb-5 mt-14 text-3xl">Example</h2>
-        <Image
-          src="/topics/identifying_email_phishing_example.jpg"
-          alt="identifying email phishing example"
-          width={500}
-          height={700}
-        />
+        <Link
+          href="/topics/identifying_email_phishing_example.jpg"
+          target="_blank"
+        >
+          <Image
+            src="/topics/identifying_email_phishing_example.jpg"
+            alt="identifying email phishing example"
+            width={500}
+            height={700}
+          />
+        </Link>
         <h2 className="mb-5 mt-14 text-3xl">Video</h2>
         <iframe
           width="430"

@@ -16,6 +16,7 @@ import MaxWidthWrapper from "@/components/max-width-wrapper";
 import MutipleChoiceSection from "./mutiple-choice-section";
 import Navbar from "@/components/navbar";
 import { LucideMailQuestion } from "lucide-react";
+import Link from "next/link";
 
 type SingleQuizQuestionPageProps = {
   params: {
@@ -45,28 +46,15 @@ export default function SingleQuizQuestionPage({
         </div>
         <p className="my-5">{question.question}</p>
         {question.image && (
-          <Dialog>
-            <DialogTrigger asChild>
-              <Image
-                src={question.image}
-                className="mx-auto"
-                alt={`Image for question ${question.id}`}
-                width={1280}
-                height={200}
-              />
-            </DialogTrigger>
-            <DialogContent className="h-[600px] w-[1280px]">
-              <DialogHeader></DialogHeader>
-              <Image
-                src={question.image}
-                className="mx-auto -rotate-90"
-                alt={`Image for question ${question.id}`}
-                width={1280}
-                height={1280}
-              />
-              <DialogFooter></DialogFooter>
-            </DialogContent>
-          </Dialog>
+          <Link href={`/question/q${question.id}.png`} target="_blank">
+            <Image
+              src={question.image}
+              className="mx-auto"
+              alt={`Image for question ${question.id}`}
+              width={1280}
+              height={1280}
+            />
+          </Link>
         )}
         <MutipleChoiceSection question={question} />
       </MaxWidthWrapper>

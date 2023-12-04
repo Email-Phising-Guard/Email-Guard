@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function TopicOnePage() {
   return (
     <>
-      <Navbar type="back" />
+      <Navbar type="home" />
       <MaxWidthWrapper>
         <h1 className="py-5">Email Phising</h1>
         <section className="py-5">
@@ -136,14 +136,13 @@ export default function TopicOnePage() {
               Each of these attacks has unique characteristics but they all aim
               to exploit human trust and manipulate individuals into revealing
               sensitive information. It’s important to be aware of these tactics
-              to protect yourself online.{" "}
+              to protect yourself online.
             </p>
           </div>
         </section>
         <section className="py-5">
           <h2 className="mb-3">Example</h2>
-          <Link href="/topic/topic-1-eg.png">
-            {" "}
+          <Link href="/topic/topic-1-eg.png" target="_blank">
             <Image
               src="/topic/topic-1-eg.png"
               width={400}
