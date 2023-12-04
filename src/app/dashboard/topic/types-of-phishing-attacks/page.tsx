@@ -55,7 +55,7 @@ export default function TopicOnePage() {
                   </li>
                   <li>
                     Average cost of phishing attack to a midsized company is
-                    <span className="font-semibold">$1.6 million</span>
+                    <span className="font-semibold"> $1.6 million</span>
                   </li>
                   <li>
                     30% of phishing messages are opened by the user, 12% of

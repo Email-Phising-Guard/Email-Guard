@@ -6,41 +6,60 @@ import { team } from "@/db/team";
 import TeamCard from "./team-card";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Navbar from "@/components/navbar";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function AboutPage() {
   return (
     <>
       <Navbar type="back" />
       <MaxWidthWrapper>
-        <h1 className="py-5">About</h1>
+        <h1 className="py-5 text-primary">About Email Guard</h1>
         <section className="py-5">
-          <h2 className="mb-3">Our App</h2>
-          <p>
-            Email Phishing Guard is here to help you become better at spotting
-            fake phishing emails. Through quick, entertaining quiz questions,
-            we’re ready to guide you through the ins and outs of email phishing.
+          <h4 className="text-lg">
             Our mission is to equip you with the expertise and abilities you
             need to confidently spot phishing emails and safeguard your personal
-            information online
-          </p>
+            information online.
+          </h4>
         </section>
         <section className="py-5">
-          <h2 className="mb-3">Email Phising</h2>
-          <p>
-            Phishing is a type of cyber-attack that aims to trick you into
-            disclosing sensitive or confidential information, like your login
-            credentials, financial data, or personal details. Scammers use fake
-            emails that appear to be from trusted sources, such as banks,
-            government agencies, or well-known companies, to deceive you. These
-            deceptive emails are crafted to make you take specific actions, like
-            clicking on harmful links or downloading infected attachments. So,
-            it&apos;s important for you to stay vigilant and verify the
-            authenticity of emails to protect your information and online
-            security.
-          </p>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-2xl font-semibold">
+                Our App
+              </AccordionTrigger>
+              <AccordionContent className="text-xl">
+                Email Guard is here to help you become better at spotting fake
+                phishing emails. Through quick, entertaining quiz questions,
+                we’re ready to guide you through the ins and outs of email
+                phishing.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </section>
         <section className="py-5">
-          <h2 className="mb-3">Our Team</h2>
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-2xl font-semibold">
+                Email Phishing Summary
+              </AccordionTrigger>
+              <AccordionContent className="text-xl">
+                Phishing is a cyber-attack where scammers trick you into sharing
+                sensitive information, like login details or personal data,
+                through fake emails. These emails seem to come from trusted
+                sources and often ask you to click harmful links or download
+                infected files. To protect your online security, it’s crucial to
+                verify email authenticity.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </section>
+        <section className="py-5">
+          <h2 className="mb-10 mt-10 text-4xl text-primary">Our Team</h2>
           <div className="space-y-5">
             {team.map((member) => (
               <TeamCard key={member.name} member={member} />
@@ -49,7 +68,7 @@ export default function AboutPage() {
         </section>
         <section className="py-5">
           <form>
-            <h2 className="mb-10 mt-20 text-center text-4xl text-primary">
+            <h2 className="mb-10 mt-10 text-4xl text-primary">
               Have Questions?
             </h2>
             <div className="mb-5 space-y-3">
