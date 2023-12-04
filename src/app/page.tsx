@@ -17,7 +17,7 @@ export default function Home() {
       <MaxWidthWrapper className="flex flex-col justify-evenly py-0">
         <div className="text-center">
           <div className="flex justify-center">
-            <Logo width={170.14} height={200.97} />
+            <Logo width={170.14} height={150.97} />
           </div>
           <h1 className="pt-5 text-5xl font-bold">Email Guard</h1>
           <p className="mb-5 pt-5 italic">Ready to defend yourself?</p>
