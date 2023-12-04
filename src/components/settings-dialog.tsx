@@ -17,10 +17,8 @@ export default function SettingsDialog() {
           <Settings className="stroke-primary" size={34} />
         </Button>
       </DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Settings</DialogTitle>
-        </DialogHeader>
+      <DialogContent className="border-black dark:border-white sm:w-[300px]">
+        <DialogHeader></DialogHeader>
         <ThemeController />
       </DialogContent>
     </Dialog>

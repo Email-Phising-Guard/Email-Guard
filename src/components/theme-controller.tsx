@@ -18,9 +18,9 @@ export default function ThemeController() {
     setTheme(isDark ? "light" : "dark");
   };
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center justify-center space-x-2">
       <Switch onClick={handleChangeTheme} checked={isDark} />
-      <Label>{isDark ? "Dark Mode" : "Light Mode"}</Label>
+      <Label className="text-xl">{isDark ? "Dark Mode" : "Light Mode"}</Label>
     </div>
   );
 }
